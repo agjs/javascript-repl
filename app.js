@@ -3,12 +3,16 @@ const expect = chai.expect;
 
 describe('Object', function () {
 
-    it('should consider positive and negative values to be different', function(done){
+	it('should consider Object.is() to return false on positive and negative zero', function (done) {
 
-        expect(-0).to.equal(0);
-        expect(Object.is(0, -0)).to.equal(false);    
+		expect(Object.is(0, -0)).to.equal(false);
+		done();
+	});
 
-        done();
-    });
+	it('should consider tripple assignment operator to return true on positive and negative zero', function (done) {
+
+		expect(-0 === 0).to.equal(true);
+		done();
+	});
 
 });
