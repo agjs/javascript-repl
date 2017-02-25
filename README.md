@@ -1,1 +1,3 @@
-# javascript-repl
+# Javascript REPL
+
+* npm test
