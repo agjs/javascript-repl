@@ -11,6 +11,8 @@
   "devDependencies": {
     "chai": "*",
     "chai-http": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "sinon": "^7.2.3",
+    "sinon-chai": "^3.3.0"
   }
 }
